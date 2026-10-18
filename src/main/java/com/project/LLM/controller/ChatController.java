@@ -19,8 +19,8 @@ public class ChatController {
 	}
 	
 	@GetMapping("/gemini")
-	public ResponseEntity<?> callChat(@RequestParam("message") String message) {
-		return ResponseEntity.ok(service.chatUsingGemini(message));
+	public ResponseEntity<?> callChat(@RequestParam("feedback") String feedback) {
+		return ResponseEntity.ok(service.chatUsingGemini(feedback));
 	}
 	
 	
